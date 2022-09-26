@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Assignment - 2**"
+      ],
+      "metadata": {
+        "id": "G6mLGlXxipSx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tuMJuWsNh_CZ",
+        "outputId": "a4ab64db-b444-4240-8656-b4eb67df75e1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Temperature= 77 Humidity 40\n",
+            "Temperature= 52 Humidity 37\n",
+            "Temperature= 19 Humidity 16\n",
+            "Temperature= 76 Humidity 38\n",
+            "Temperature= 62 Humidity= 28\n",
+            "         Alarm ON         \n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "from time import*\n",
+        "ideal=True\n",
+        "while(ideal):\n",
+        "    Temp=random.randint(0,100)\n",
+        "    Humi=random.randint(10,50)\n",
+        "    if Temp>40 and Humi<30:\n",
+        "        print(\"Temperature=\",Temp,\"Humidity=\",Humi)\n",
+        "        print(\"         Alarm ON         \")\n",
+        "        ideal=False\n",
+        "    else:\n",
+        "        print(\"Temperature=\",Temp,\"Humidity\",Humi)\n",
+        "        sleep(1);"
+      ]
+    }
+  ]
+}
